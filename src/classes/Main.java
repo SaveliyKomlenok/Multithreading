@@ -11,6 +11,7 @@ public class Main {
         ShuttleSortThread shuttleSortThread = new ShuttleSortThread(arrayFactory.createArray(10), "Thread4:(Shuttle sort)");
         ShellSortThread shellSortThread = new ShellSortThread(arrayFactory.createArray(10), "Thread5:(Shell sort)");
         CountingSortThread countingSortThread = new CountingSortThread(arrayFactory.createArray(10), "Thread6:(Counting sort)");
+        QuickSortThread quickSortThread = new QuickSortThread(arrayFactory.createArray(10), "Thread7:(Quick sort)");
 
         try {
             bubbleSortThread.join();
@@ -19,6 +20,7 @@ public class Main {
             shuttleSortThread.join();
             shellSortThread.join();
             countingSortThread.join();
+            quickSortThread.join();
         } catch (InterruptedException exception){
             System.out.println("Error: " + exception.getMessage());
         }
