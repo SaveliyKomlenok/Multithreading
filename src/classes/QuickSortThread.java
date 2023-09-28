@@ -1,10 +1,8 @@
 package classes;
 
-import interfaces.Swappable;
-
 import java.util.Arrays;
 
-public class QuickSortThread extends Thread implements Swappable {
+public class QuickSortThread extends Thread {
     int[] array;
     public QuickSortThread (int[] array, String threadName){
         this.array = array;
@@ -36,7 +34,7 @@ public class QuickSortThread extends Thread implements Swappable {
 
             if (leftMarker <= rightMarker) {
                 if (leftMarker < rightMarker) {
-                    swap(array, leftMarker, rightMarker);
+                    ArrayService.swap(array, leftMarker, rightMarker);
                 }
                 leftMarker++;
                 rightMarker--;
@@ -49,12 +47,5 @@ public class QuickSortThread extends Thread implements Swappable {
         if (left < rightMarker) {
             quickSort(array, left, rightMarker);
         }
-    }
-
-    @Override
-    public void swap(int[] array, int firstIndex, int secondIndex){
-        int temp = array[firstIndex];
-        array[firstIndex] = array[secondIndex];
-        array[secondIndex] = temp;
     }
 }

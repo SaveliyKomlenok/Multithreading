@@ -5,22 +5,14 @@ import factories.ArrayFactory;
 public class Main {
     public static void main(String[] args) {
         ArrayFactory arrayFactory = new ArrayFactory();
-        BubbleSortThread bubbleSortThread = new BubbleSortThread(arrayFactory.createArray(10), "Thread1:(Bubble sort)");
-        SelectionSortThread selectionSortThread = new SelectionSortThread(arrayFactory.createArray(10), "Thread2:(Selection sort)");
-        InsertionSortThread insertionSortThread = new InsertionSortThread(arrayFactory.createArray(10), "Thread3:(Insertion sort)");
-        ShuttleSortThread shuttleSortThread = new ShuttleSortThread(arrayFactory.createArray(10), "Thread4:(Shuttle sort)");
-        ShellSortThread shellSortThread = new ShellSortThread(arrayFactory.createArray(10), "Thread5:(Shell sort)");
-        CountingSortThread countingSortThread = new CountingSortThread(arrayFactory.createArray(10), "Thread6:(Counting sort)");
-        QuickSortThread quickSortThread = new QuickSortThread(arrayFactory.createArray(10), "Thread7:(Quick sort)");
-
         try {
-            bubbleSortThread.join();
-            selectionSortThread.join();
-            insertionSortThread.join();
-            shuttleSortThread.join();
-            shellSortThread.join();
-            countingSortThread.join();
-            quickSortThread.join();
+            new BubbleSortThread(arrayFactory.createArray(10), "Thread1:(Bubble sort)").join();
+            new SelectionSortThread(arrayFactory.createArray(10), "Thread2:(Selection sort)").join();
+            new InsertionSortThread(arrayFactory.createArray(10), "Thread3:(Insertion sort)").join();
+            new ShuttleSortThread(arrayFactory.createArray(10), "Thread4:(Shuttle sort)").join();
+            new ShellSortThread(arrayFactory.createArray(10), "Thread5:(Shell sort)").join();
+            new CountingSortThread(arrayFactory.createArray(10), "Thread6:(Counting sort)").join();
+            new QuickSortThread(arrayFactory.createArray(10), "Thread7:(Quick sort)").join();
         } catch (InterruptedException exception){
             System.out.println("Error: " + exception.getMessage());
         }

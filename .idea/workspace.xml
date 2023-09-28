@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7e599eb-9926-417a-8575-66d11c5031c5" name="Changes" comment="add counting sort thread">
+    <list default="true" id="d7e599eb-9926-417a-8575-66d11c5031c5" name="Changes" comment="add quick sort thread">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BubbleSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BubbleSortThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CountingSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/CountingSortThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/InsertionSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/InsertionSortThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/QuickSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/QuickSortThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/SelectionSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/SelectionSortThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ShellSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ShellSortThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ShuttleSortThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ShuttleSortThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Swappable.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +72,7 @@
       <workItem from="1695819258173" duration="282000" />
       <workItem from="1695819850221" duration="1248000" />
       <workItem from="1695845214834" duration="1286000" />
+      <workItem from="1695910022765" duration="4083000" />
     </task>
     <task id="LOCAL-00001" summary="add project">
       <created>1695809825325</created>
@@ -105,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695850370343</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add quick sort thread">
+      <created>1695851084072</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695851084072</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +147,7 @@
     <MESSAGE value="add insertion sort thread" />
     <MESSAGE value="add shuttle sort thread" />
     <MESSAGE value="add counting sort thread" />
-    <option name="LAST_COMMIT_MESSAGE" value="add counting sort thread" />
+    <MESSAGE value="add quick sort thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="add quick sort thread" />
   </component>
 </project>

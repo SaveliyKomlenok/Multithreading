@@ -14,11 +14,12 @@ public class InsertionSortThread extends Thread{
     public void run() {
         System.out.println("Start -> " + Thread.currentThread().getName());
         System.out.println("Array for insertion sort" + Arrays.toString(this.array));
-        System.out.println("Array sorted by insertion sort" + Arrays.toString(insertionSort(this.array)));
+        insertionSort(this.array);
+        System.out.println("Array sorted by insertion sort" + Arrays.toString(this.array));
         System.out.println("End -> " + Thread.currentThread().getName());
     }
 
-    public int[] insertionSort(int[] array){
+    public void insertionSort(int[] array){
         for (int left = 0; left < array.length; left++) {
             int number = array[left];
             int i = left - 1;
@@ -31,6 +32,5 @@ public class InsertionSortThread extends Thread{
             }
             array[i + 1] = number;
         }
-        return array;
     }
 }
